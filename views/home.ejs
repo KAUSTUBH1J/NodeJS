@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1>Weclome to My Shop</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam porro sint illo assumenda architecto modi, doloribus fugit? Alias distinctio blanditiis, deserunt ut possimus quis! Quibusdam nulla quasi doloremque voluptate perferendis architecto!</p>
+    <br>
+    <a href="/about">about</a>
+    <br>
+    <span><%= data.name %></span>
+    <span><%= data.email %></span>
+    <br>
+    <h2>Prudcut List</h2>
+    <ul>
+        <% product.forEach((item)=>{ %>
+        <li>
+            <b>Name:</b><%= item.name %> /// 
+            <b>Qty:</b><%= item.qty %>  ///
+            <b>Price:</b><%= item.price %> 
+        </li>
+        <% }) %>
+    </ul>
+
+</body>
+</html>
