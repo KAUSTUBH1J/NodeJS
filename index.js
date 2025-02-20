@@ -146,7 +146,6 @@ const main = async () =>{
     let data = await dbConnect();
     data = await data.find();
     console.log(data); 
-
 }
 
 main();
