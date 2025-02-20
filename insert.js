@@ -6,13 +6,20 @@ dbConnect().then((resp)=>{
     })
 })
 
+// console.log()
+
+const name = process.argv[2];
+const price = process.argv[3];
+const category = process.argv[4];
+
+
 const insert = async () =>{
     console.log('insert call');
     let data = await dbConnect();
     let result = await data.insertOne({
-        name: 'sumsung s24 ultra',
-        price: 150000,
-        category: 'mobile'
+        name: name,
+        price: price,
+        category: category
     });
     console.log(result)
 }
